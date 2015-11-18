@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <!-- CM replacements -->
+  <remove-project name="CyanogenMod/android_build" />
+  <remove-project name="CyanogenMod/android_vendor_cm" />
+  <remove-project name="CyanogenMod/android_system_core" />
+  <project path="build" name="cm-paz00/android_build" revision="jellybean-paz00" >
+	<copyfile src="core/root.mk" dest="Makefile" />  
+  </project>
+  <project path="vendor/cm" name="cm-paz00/android_vendor_cm" revision="jellybean-paz00"/>
+  <project path="system/core" name="cm-paz00/android_system_core" revision="jellybean-paz00" />
+    <!-- AC100 Specific -->
+  <project path="kernel/toshiba/ac100" name="ac100-ru/picasso-kernel" remote="github" revision="refs/heads/3.18-paz00" />
+  <project path="device/toshiba/paz00-common" name="zombah/android_device_toshiba_paz00-common" remote="github" revision="refs/heads/jellybean-devel" />
+  <project path="device/toshiba/ac100" name="zombah/android_device_toshiba_ac100" remote="github" revision="refs/heads/jellybean-devel" />
+  <project path="vendor/toshiba/paz00" name="zombah/android_vendor_toshiba_paz00" remote="github" revision="refs/heads/jellybean" />
+  <project path="hardware/backports" name="zombah/backports" remote="github" revision="refs/heads/backports-3.19-rc1-1" />
+  <project path="vendor/mbm" name="ac100-ru/vendor_mbm" remote="github" revision="refs/heads/ac100" />
+</manifest>
