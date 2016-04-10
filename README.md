@@ -6,6 +6,6 @@ See <a href='https://github.com/zombah/cm-paz00/wiki'>Wiki</a> for install guide
 
 ## How to download sources
 
-> repo init -u git://github.com/CyanogenMod/android.git -b cm-11.0
+> repo init -u git://github.com/CyanogenMod/android.git -b cm-11.0  
 > curl --create-dirs -L -o .repo/local_manifests/local_manifest.xml -O -L https://raw.githubusercontent.com/cm-paz00/cm-paz00/cm-11.0/local_manifest.xml  
  
